@@ -1,0 +1,213 @@
+:root {
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsla(234, 85%, 45%);
+    --Light-red-l: hsla(0, 100%, 67%, 0.1);
+    --Orangey-yellow-l: hsla(39, 100%, 56%, 0.1);
+    --Green-teal-l: hsla(166, 100%, 37%, 0.1);
+    --Cobalt-blue-l: hsla(234, 85%, 45%, 0.1);
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+*  {
+    font-family: "Hanken Grotesk", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body  {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    min-width: 100vw;
+}
+
+.gral  {
+    height: 300px;
+    width: 430px;
+    background: white;
+    border-radius: 20px;
+    display:flex;
+    box-shadow: 15px 15px 30px var(--Pale-blue) ;
+}
+
+header  {
+    background: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+    border-radius: 20px;
+    height: 100%;
+    width: 50%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1  {
+    color: var(--Light-lavender);
+    font-size: 14px;
+    margin: 22px;
+    font-weight: 400px;
+}
+
+.score  {
+    background: linear-gradient(var(--Violet-blue), var(--Persian-blue));
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+h2  {
+    font-weight: 900px;
+    font-size: 3em;
+    text-align: center;
+    color: white;
+}
+
+.max-score  {
+    color: var(--Light-lavender);
+    font-size: 10px;
+    font-weight: 200px;
+    text-align: center;
+    height: fit-content;
+}
+
+h3  {
+    font-weight: 600px;
+    font-size: 18px;
+    margin: 20px 0 10px;
+    color: white;
+}
+
+.text-hd  {
+    color: var(--Light-lavender);
+    font-size: 10px;
+    padding: 0 18%;
+    text-align: center;
+
+}
+
+main {
+    display: inline-flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+h4 {
+    align-self: flex-start;
+    margin: 25px 10% 10px;
+    font-size: 14px;
+
+}
+
+.nbr {
+    width: 80%;
+    height: 11%;
+    display:flex;
+    align-items: center;
+    position: relative;
+    margin: 2%;
+    border-radius: 7px;
+}
+
+.nbr img {
+    height: 40%;
+    margin: 0 5%;
+}
+
+.nbr p {
+    font-size: 11px;
+}
+
+.scores {
+    position: absolute;
+    right: 8%;
+    color: gray;
+}
+
+.scores b {color: black;}
+
+#name-1 {color: var(--Light-red)}
+#name-2 {color: var(--Orangey-yellow)}
+#name-3 {color: var(--Green-teal)}
+#name-4 {color: var(--Cobalt-blue)}
+
+.red {background: var(--Light-red-l)}
+.yellow {background: var(--Orangey-yellow-l)}
+.green {background: var(--Green-teal-l)}
+.blue {background: var(--Cobalt-blue-l)}
+
+.cont  {
+    background: var(--Dark-gray-blue);
+    color: white;
+    width: 80%;
+    height: 12%;
+    margin: auto;
+    text-align: center;
+    font-size: 11px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.cont:hover {
+    background: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+    cursor: pointer;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+
+    .gral  {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        flex-wrap: wrap;
+    }
+    
+    header  {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        height: 40%;
+        width: 100%;
+    }
+    .score  {
+        width: 110px;
+        height: 110px;
+    }
+    h1  {
+        margin: 10px;
+    }
+
+    main {
+        width: 100%;
+        height: 60%;    
+    }
+
+    footer {
+        position: absolute;
+        bottom: 10px;
+    }
+}
